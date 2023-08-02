@@ -24,7 +24,7 @@ function mySketch(num){
         intensity[i] = 1;
         grid.appendChild(pixel[i]);
 
-        pixel[i].addEventListener("mouseover",()=>{
+        pixel[i].addEventListener("dragenter",()=>{
             changeColor(pixel[i],intensity[i]*22.5);
             intensity[i]+=1;
         });
